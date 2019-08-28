@@ -9,7 +9,7 @@ public class JavaApplication {
 
     public static void main(String[] args) {
        LocalDate hoje = LocalDate.now();
-        /*System.out.println(hoje);
+        System.out.println(hoje);
         
         LocalDate atentados= LocalDate.of(2001, Month.SEPTEMBER, 11);
         System.out.println(atentados);
@@ -70,14 +70,14 @@ public class JavaApplication {
         System.out.println("Menos 1 ano: "+hoje.minusYears(1));
         System.out.println("Menos 1 mes: "+hoje.minusMonths(1));
         System.out.println("Menos 3 dias: "+hoje.minusDays(3));
-        */
+        
         
         LocalDateTime agora = LocalDateTime.now();
         System.out.println("Data/Hora: "+agora);
         
-        DateTimeFormatter formatador = DateTimeFormatter
+        DateTimeFormatter formatador2 = DateTimeFormatter
                 .ofLocalizedDateTime(FormatStyle.SHORT, FormatStyle.MEDIUM);
-        String agoraFormatado = agora.format(formatador);
+        String agoraFormatado = agora.format(formatador2);
         System.out.println(agoraFormatado);
     }
     
