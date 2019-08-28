@@ -79,6 +79,11 @@ public class JavaApplication {
                 .ofLocalizedDateTime(FormatStyle.SHORT, FormatStyle.MEDIUM);
         String agoraFormatado = agora.format(formatador2);
         System.out.println(agoraFormatado);
+        
+        System.out.println("HOras: "+agora.getHour());
+        System.out.println("Minutos: "+agora.getMinute());
+        System.out.println("Segundo "+agora.getSecond());
+        System.out.println("Nanos: "+agora.getNano());
     }
     
 }
